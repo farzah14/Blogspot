@@ -6,16 +6,16 @@
       <%- include("./partials/navbar.ejs") %>
     </header>
     <main class="flex justify-center items-center mt-12">
-      <form action="/login" method="POST" class="rounded-md border-2 border-lime-800 ms-center p-2" id="formLogin">
+      <form action="/join/login" method="POST" class="rounded-md border-2 border-lime-800 ms-center p-2" id="formLogin">
         <div class="flex flex-row justify-around">
           <label for="login" class="block text-3xl font-medium text-gray-900 cursor-pointer" id="signUpLabel">
             <%=titleForm%>
           </label>
         </div>
         <div class="mt-6 flex flex-col justify-around items-center">
-          <input type="text" name="login" id="login" autocomplete="given-name" placeholder="Your Email"
+          <input type="text" name="email" id="login" autocomplete="given-name" placeholder="Your Email"
             class="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 my-5">
-          <input type="text" name="login" id="login" autocomplete="given-name" placeholder="Your Password"
+          <input type="text" name="password" id="login" autocomplete="given-name" placeholder="Your Password"
             class="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 my-5">
         </div>
         <p>Don't have an account? <a href="/join/signup" class="text-teal-600">
