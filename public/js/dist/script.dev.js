@@ -12,3 +12,14 @@ function submitSuccess() {
     alert("Create Account Failed");
   }
 }
+
+var dropdownButton = document.getElementById("dropdownButton");
+var dropdownMenu = document.getElementById("dropdownMenu");
+dropdownButton.addEventListener("click", function () {
+  dropdownMenu.classList.toggle("hidden");
+});
+document.body.addEventListener("click", function (event) {
+  if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+    dropdownMenu.classList.add("hidden");
+  }
+});
